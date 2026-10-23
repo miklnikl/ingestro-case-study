@@ -1,0 +1,7 @@
+node_modules/
+dist/
+package-lock.json
+*.tsbuildinfo
+AGENTS.md
+import-data.csv
+issues-report.json

@@ -1,0 +1,139 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #182335;
+  background: #f5f6f8;
+  font-synthesis: none;
+}
+body {
+  margin: 0;
+}
+.app {
+  max-width: 1680px;
+  margin: auto;
+}
+header {
+  padding: 24px 32px;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+header h3.ant-typography {
+  margin: 0 0 4px;
+}
+main {
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.summary {
+  display: flex;
+  gap: 48px;
+  padding: 22px 26px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+}
+.summary div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.summary strong {
+  font-size: 28px;
+  font-variant-numeric: tabular-nums;
+}
+.summary span {
+  color: #596577;
+}
+.toolbar,
+footer {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer {
+  color: #596577;
+  font-size: 12px;
+}
+.cell {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  padding: 4px 6px;
+  width: 100%;
+  text-align: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  border-radius: 3px;
+}
+.cell:hover {
+  background: #edf3ff;
+}
+.cell:focus-visible {
+  outline: 2px solid #2458b8;
+}
+.cell.invalid {
+  color: #a3281d;
+  background: #fff0ed;
+}
+.empty {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 64px 24px;
+  min-height: 400px;
+}
+.empty .ant-upload-wrapper {
+  display: block;
+  max-width: 620px;
+  margin: 24px auto 0;
+}
+@media (max-width: 700px) {
+  header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  header,
+  main {
+    padding: 20px 16px;
+  }
+  .summary {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .summary strong {
+    font-size: 24px;
+  }
+}
+
+.summary > a {
+  margin-left: auto;
+  align-self: center;
+}
+.history-entry {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.history-ids {
+  font-family: ui-monospace, monospace;
+}
+
+.issue-replacement {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.issue-samples {
+  margin: 0;
+  padding-left: 20px;
+  overflow-wrap: anywhere;
+}
